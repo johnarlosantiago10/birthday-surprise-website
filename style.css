@@ -670,10 +670,6 @@ header .navbar {
     transform: none;
   }
 
-  .hero-details {
-    margin-top: 90px;
-  }
-
   .hero-button {
     width: 90%;
     font-size: 1rem;
