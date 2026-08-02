@@ -1,0 +1,725 @@
+/* Font style */
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v24-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/poppins-v24-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* caveat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caveat-v23-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* caveat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/caveat-v23-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* caveat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/caveat-v23-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* caveat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/caveat-v23-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* caveat-brush-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Caveat Brush";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caveat-brush-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --background: #5e5a55;
+  --orange: #fd6f2f;
+  --maroon: #6b1f2d;
+  --pink: #fa9ebc;
+  --text: #ffffff;
+  --text-secondary: #d4d4d8;
+
+  /* Font size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /* Font weight */
+  --font-weight-normal: 300;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-radius-small: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /* Site max width */
+  --site-max-width: 1600px;
+
+  --gradient: linear-gradient(
+    -90deg,
+    rgb(236, 130, 190) 5%,
+    #f14e9a 40%,
+    #e94057 70%,
+    #f27121 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 100;
+}
+
+header .navbar {
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--site-max-width);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  background: var(--gradient);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-links {
+  margin: 0 20px;
+  padding: 0 10px;
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--orange);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+  transition: transform 0.3s ease;
+}
+.link:hover {
+  transform: scale(1.2);
+}
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+  display: none;
+}
+
+/* HERO */
+
+.hero-section {
+  width: 100%;
+  background: var(--background);
+  min-height: 100vh;
+}
+
+.section-content {
+  position: relative;
+  overflow: hidden;
+  max-width: var(--site-max-width);
+  width: 100%;
+  margin: 0 auto;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 60%),
+    var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hero-details {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 50px;
+
+  z-index: 3;
+}
+
+.hero-title {
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+  letter-spacing: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-title2 {
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  background: var(--gradient);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-message {
+  font-family: "Caveat Brush", sans-serif;
+  font-size: var(--font-size-l);
+  color: var(--pink);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  border: none;
+  background: var(--gradient);
+  padding: 8px 0;
+  width: 50%;
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size-m);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+  font-size: var(--font-size-n);
+  color: var(--text-secondary);
+  box-shadow:
+    0 8px 20px rgba(241, 78, 154, 0.35),
+    0 3px 8px rgba(242, 113, 33, 0.25);
+}
+
+.hero-button:hover {
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  background: var(--background);
+  transform: translateY(-3px) scale(1.05);
+
+  box-shadow:
+    0 12px 28px rgba(241, 78, 154, 0.5),
+    0 6px 15px rgba(242, 113, 33, 0.4);
+}
+
+.photo1 {
+  position: absolute;
+  width: 70%;
+  top: -100px;
+  left: -270px;
+  transform: rotate(5deg);
+}
+
+.hero-accent {
+  position: absolute;
+  height: 250px;
+  width: 900px;
+  bottom: 0;
+  left: 180px;
+}
+
+.gem-accent {
+  position: absolute;
+  height: 300px;
+  width: 550px;
+  top: 50px;
+  left: 560px;
+}
+
+/* Animation */
+
+.fade-down,
+.fade-up,
+.slide-left,
+.slide-right,
+.zoom-in,
+.fade-in {
+  opacity: 0;
+}
+
+.fade-down {
+  animation: fadeDown 1s ease forwards;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-right {
+  animation: slideRight 1.6s ease forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+
+    transform: translateX(250px) rotate(15deg);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0) rotate(5deg);
+  }
+}
+
+.slide-left {
+  animation: slideLeft 1.5s ease forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+
+    transform: translateX(-250px) rotate(15deg);
+  }
+
+  to {
+    opacity: 0.1;
+
+    transform: translateX(0) rotate(5deg);
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 2s ease forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.vespa {
+  position: absolute;
+  max-width: 600px;
+  right: 20px;
+  top: -50px;
+
+  opacity: 0;
+  transform: translateX(200px) rotate(15deg);
+
+  animation: vespaEnter 1.8s ease-out forwards;
+}
+
+@keyframes vespaEnter {
+  to {
+    opacity: 0.2;
+    transform: translateX(0) rotate(5deg);
+  }
+}
+
+/* Media at 1024px */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .navbar-links {
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  .link {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-title2 {
+    font-size: 6rem;
+  }
+
+  .hero-message {
+    padding: 0;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+  }
+
+  .hero-details {
+    max-width: 420px;
+    padding: 60px 30px;
+  }
+
+  .vespa {
+    right: -70px;
+    top: 0;
+  }
+
+  .photo1 {
+    width: 90%;
+    top: -50px;
+    left: -400px;
+  }
+
+  .hero-accent {
+    width: 700px;
+    height: 200px;
+    bottom: 50px;
+    left: auto;
+    right: auto;
+  }
+
+  .gem-accent {
+    top: 40px;
+    width: 550px;
+    height: 300px;
+    left: auto;
+    right: auto;
+    z-index: 3;
+  }
+}
+
+/* media @ 768px */
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+  }
+
+  body.show-mobile-menu .header::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar :where(#menu-close-button, #menu-open-button) {
+    display: block;
+    font-size: var(--font-size-l);
+    background: none;
+    border: none;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  #menu-close-button {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+
+  .navbar .navbar-menu {
+    display: block;
+    background: var(--background);
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    transition: left 0.2s ease;
+  }
+
+  body.show-mobile-menu .navbar .navbar-menu {
+    left: 0;
+  }
+
+  .navbar-logo {
+    font-size: 2rem;
+  }
+  .link {
+    display: block;
+    margin-top: 17px;
+    font-size: var(--font-size-l);
+    background: var(--gradient);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-details {
+    position: relative;
+    z-index: 10;
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: 8px;
+  }
+
+  .hero-title2 {
+    font-size: 6rem;
+  }
+  .hero-message {
+    font-size: 1.3rem;
+    max-width: 320px;
+  }
+  .hero-button {
+    width: 180px;
+    font-size: 1rem;
+  }
+
+  .vespa {
+    width: 70%;
+    left: 200px;
+    bottom: 0;
+    top: auto;
+    opacity: 0.1;
+    animation: none;
+  }
+
+  .photo1 {
+    width: 100%;
+    top: -20px;
+    left: -400px;
+    opacity: 0.1;
+    animation: none;
+  }
+
+  .hero-accent {
+    width: 90%;
+    height: auto;
+
+    right: auto;
+    left: auto;
+
+    bottom: 0;
+
+    transform: none;
+  }
+
+  .gem-accent {
+    width: 100%;
+    height: auto;
+
+    right: auto;
+    left: auto;
+
+    top: 0;
+
+    transform: none;
+  }
+}
+
+/* media @ 480px */
+@media screen and (max-width: 480px) {
+  header {
+  }
+
+  .hero-details {
+    position: relative;
+    z-index: 10;
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 7px;
+  }
+
+  .hero-title2 {
+    font-size: 5rem;
+  }
+  .hero-message {
+    font-size: 1.1rem;
+    max-width: 320px;
+  }
+  .hero-button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .gem-accent {
+    right: auto;
+    left: auto;
+
+    top: 50px;
+
+    transform: none;
+  }
+
+  .hero-accent {
+    width: auto;
+    height: 25%;
+
+    right: auto;
+    left: auto;
+
+    bottom: 50px;
+
+    transform: none;
+  }
+  .photo1 {
+    height: 100%;
+    top: -20px;
+    left: -200px;
+  }
+
+  .vespa {
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    opacity: 0.1;
+    animation: none;
+  }
+}
