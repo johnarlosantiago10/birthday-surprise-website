@@ -317,7 +317,8 @@ header .navbar {
   height: 250px;
   width: 900px;
   bottom: 0;
-  left: 180px;
+  left: auto;
+  right: auto;
 }
 
 .gem-accent {
@@ -325,7 +326,8 @@ header .navbar {
   height: 300px;
   width: 550px;
   top: 50px;
-  left: 560px;
+  left: auto;
+  right: auto;
 }
 
 /* Animation */
@@ -670,6 +672,7 @@ header .navbar {
   .hero-title {
     font-size: 2rem;
     letter-spacing: 7px;
+    margin-top: 80px;
   }
 
   .hero-title2 {
@@ -688,7 +691,7 @@ header .navbar {
     right: auto;
     left: auto;
 
-    top: 50px;
+    top: 60px;
 
     transform: none;
   }
