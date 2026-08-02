@@ -6,7 +6,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-500 - latin */
@@ -15,7 +15,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/poppins-v24-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/poppins-v24-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-600 - latin */
@@ -24,7 +24,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-700 - latin */
@@ -33,7 +33,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/poppins-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/poppins-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-800 - latin */
@@ -42,7 +42,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/poppins-v24-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/poppins-v24-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-900 - latin */
@@ -51,7 +51,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* caveat-regular - latin */
@@ -60,7 +60,7 @@
   font-family: "Caveat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/caveat-v23-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/caveat-v23-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* caveat-500 - latin */
@@ -69,7 +69,7 @@
   font-family: "Caveat";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/caveat-v23-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/caveat-v23-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* caveat-600 - latin */
@@ -78,7 +78,7 @@
   font-family: "Caveat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/caveat-v23-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/caveat-v23-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* caveat-700 - latin */
@@ -87,7 +87,7 @@
   font-family: "Caveat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/caveat-v23-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/caveat-v23-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* caveat-brush-regular - latin */
@@ -96,7 +96,7 @@
   font-family: "Caveat Brush";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/caveat-brush-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/caveat-brush-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root {
@@ -168,6 +168,7 @@ header .navbar {
   width: 100%;
   margin: 0 auto;
   max-width: var(--site-max-width);
+  padding: 0 30px;
 
   display: flex;
   justify-content: space-between;
@@ -282,7 +283,6 @@ header .navbar {
   padding: 8px 0;
   width: 50%;
   border-radius: var(--border-radius-small);
-  font-size: var(--font-size-m);
   cursor: pointer;
   transition: transform 0.3s ease;
   text-align: center;
@@ -463,10 +463,6 @@ header .navbar {
 
 /* Media at 1024px */
 @media (max-width: 1024px) {
-  .navbar {
-    padding: 0 30px;
-  }
-
   .navbar-links {
     margin: 0 10px;
     padding: 0;
