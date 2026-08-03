@@ -204,7 +204,7 @@ header .navbar {
 .link {
   display: inline-block;
   text-decoration: none;
-  color: var(--orange);
+  color: var(--maroon);
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-medium);
   transition: transform 0.3s ease;
@@ -213,7 +213,8 @@ header .navbar {
   transform: scale(1.2);
 }
 
-.navbar :where(#menu-close-button, #menu-open-button) {
+#menu-close-button,
+#menu-open-button {
   display: none;
 }
 
@@ -493,23 +494,27 @@ header .navbar {
   z-index: 1;
 }
 
-.section-header {
+.menu-section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   padding: 100px 0;
   text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.section-title {
+.menu-section-title {
   font-size: var(--font-size-xxl);
   color: var(--maroon);
 }
 
-.section-subtitle {
+.menu-section-subtitle {
   font-size: var(--font-size-l);
   color: var(--background);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .collections-grid {
@@ -586,6 +591,60 @@ header .navbar {
 .home-button:hover {
   box-shadow: 0 10px 25px rgba(31, 27, 28, 0.4);
   transform: translateY(-8px);
+}
+
+/* STORY SECTION */
+
+.memories {
+  position: relative;
+  background: url("images/roadmap-background.jpg") center/cover no-repeat;
+  padding: 100px 10%;
+}
+
+.memories::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+}
+
+.memories-content {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: var(--font-size-xxl);
+  font-family: "Caveat Brush", sans-serif;
+}
+
+.section-subtitle {
+  font-size: var(--font-size-m);
+  color: #444;
+  text-align: center;
+}
+
+.section-subtitle span {
+  display: block;
+}
+
+.memory-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.memory-image {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  transition: 0.4s ease;
+}
+
+.memory-image:hover {
+  transform: translateY(-10px);
 }
 
 /* Media at 1024px */
@@ -680,7 +739,8 @@ header .navbar {
     backdrop-filter: blur(5px);
   }
 
-  .navbar :where(#menu-close-button, #menu-open-button) {
+  #menu-close-button,
+  #menu-open-button {
     display: block;
     font-size: var(--font-size-l);
     background: none;
@@ -840,6 +900,7 @@ header .navbar {
   .hero-button {
     width: 90%;
     font-size: 1rem;
+    margin-bottom: 30px;
   }
 
   .vespa {
@@ -895,7 +956,7 @@ header .navbar {
     right: auto;
     left: auto;
 
-    bottom: 50px;
+    bottom: 30px;
 
     transform: none;
   }
