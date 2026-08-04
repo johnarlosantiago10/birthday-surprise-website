@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
+"
+    />
+  </head>
+
+  <body>
+    <header class="header" id="navbar">
+      <div class="navbar">
+        <h2 class="navbar-logo fade-down">ariannegem</h2>
+        <ul class="navbar-menu fade-down">
+          <button id="menu-close-button" class="fas fa-times"></button>
+          <li class="navbar-links">
+            <a href="index.html" class="link">HappyBirthday</a>
+          </li>
+          <li class="navbar-links">
+            <a href="menu.html" class="link">Collection</a>
+          </li>
+          <li class="navbar-links">
+            <a href="memories.html" class="link">Memories</a>
+          </li>
+          <li class="navbar-links">
+            <a href="letter.html" class="link">Letter</a>
+          </li>
+
+          <li class="navbar-links">
+            <a href="wish.html" class="link">Wishes</a>
+          </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </div>
+    </header>
+    <main>
+      <section class="letter-intro">
+        <div class="letter-intro-content">
+          <div class="envelope-container" onclick="openLetter()">
+            <img src="images/envelope.jpg" alt="Vintage Envelope" />
+          </div>
+
+          <div class="exit-container">
+            <a href="menu.html" class="exit-btn">← Make new Memories</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="letter-section" id="letterContent">
+        <div class="letter-paper">
+          <p class="letter-message">
+            Happy birthday Love, hindi na sa Stationery paper sumusulat ng
+            letter haha, pwede muna basahin anytime. Sana magustuhan mo sabi mo
+            naman dati namimiss muna makatanggap ng ganito diba? paano ba ulit
+            ito haha. Alam ko na hindi masyado maganda ang pasok nitong taon na
+            to satin, sa pamilya mo, sa atin, at ikaw na lahat sumalo ng
+            responsibilidad. Hindi madali para sa'yo dahil hindi ka naman pwede
+            tumigil. Gusto ko lang malaman mo nakikita ko lahat ng sakripisyo
+            mo, lahta ng pagod at puyat mo at gusto kong magpasalamt sa laht ng
+            gingawa mo para samin para sa akin, kahit wala na natitira para
+            sa'yo sobrang proud ako sayo Love, napakaswerte ko dahil binigyan
+            ako ni Lord ng napakabuting tao. Lagi kita ipagluluto, pagsisilbihan
+            at hahanapan ng mgandang revenge movies na may magandang plot twist,
+            hindi ako magsasawa iexplain sayo ang mga nangyare, habnang nakhiga
+            tayo sa ating sofa at kumakain ng ating cravings. Pag ok na ulit ang
+            sitwasyon natin hahanap ulit tayo ng magandang camping site at
+            ipagluluto na kita ng sinangag.Habang pinagmamasdan natin ang ganda
+            ng gabi dun natin babalikan nag mga memories natin at paguusapan ang
+            ating mga plano sa buhay.Sa ngayon eto na muna pagdating sa travel
+            ikaw na bahala mag book at maghanap haha, Basta sa Korea ako bahala
+            sayo. Sa ngayon yan na lang muna, lagi akong exited sa panibagong
+            adveture kasama ang paborito kong OBR. Iloveyou.
+          </p>
+
+          <a href="index.html" class="home-btn" onclick="backToLetter(event)">
+            ← Dramatic Exit
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
