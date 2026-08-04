@@ -123,3 +123,64 @@ if (musicControl && letterMusic) {
     });
   }
 }
+
+// OPEN PRAYER
+function openPrayer() {
+  const intro = document.querySelector(".wish-intro");
+  const prayer = document.querySelector("#prayerSection");
+  const navbar = document.querySelector("#navbar");
+
+  // Fade out intro
+  intro.classList.add("hide");
+
+  setTimeout(() => {
+    intro.style.display = "none";
+
+    // Hide navbar
+    if (navbar) {
+      navbar.style.display = "none";
+    }
+
+    // Show prayer
+    prayer.style.display = "flex";
+
+    setTimeout(() => {
+      prayer.classList.add("show");
+    }, 50);
+  }, 800);
+}
+
+// BACK TO WISH INTRO
+function backToWish(event) {
+  event.preventDefault();
+
+  const intro = document.querySelector(".wish-intro");
+  const prayer = document.querySelector("#prayerSection");
+  const navbar = document.querySelector("#navbar");
+
+  prayer.classList.remove("show");
+
+  setTimeout(() => {
+    prayer.style.display = "none";
+
+    intro.style.display = "flex";
+
+    if (navbar) {
+      navbar.style.display = "flex";
+    }
+
+    setTimeout(() => {
+      intro.classList.remove("hide");
+    }, 50);
+  }, 300);
+}
+
+function backToCollection(event) {
+  event.preventDefault();
+
+  document.body.classList.add("fade-out");
+
+  setTimeout(() => {
+    window.location.href = "menu.html";
+  }, 800);
+}
