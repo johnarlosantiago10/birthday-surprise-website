@@ -657,7 +657,12 @@ header .navbar {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
+}
+
+.video-card {
+  width: 100%;
+  max-width: 1200px;
 }
 
 .memory-image {
@@ -739,6 +744,14 @@ header .navbar {
 .envelope-container {
   text-align: center;
   cursor: pointer;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.envelope-container:hover {
+  transform: translateY(-12px) rotate(3deg);
+  filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.25));
 }
 
 .envelope-container img {
