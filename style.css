@@ -1107,6 +1107,42 @@ header .navbar {
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
+
+  /* Tablet and Mobile Responsive */
+  @media (max-width: 768px) {
+    /* YouTube Wedding Video */
+    .memory-video {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      border-radius: 15px;
+    }
+
+    /* Letter Background */
+    .letter-section {
+      padding: 50px 20px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* Letter Paper */
+    .letter-paper {
+      width: 100%;
+      padding: 30px 20px;
+      border-radius: 15px;
+    }
+
+    .letter-message {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* Envelope Image */
+    .envelope-container img {
+      width: 85%;
+      max-width: 350px;
+    }
+  }
 }
 
 /* media @ 600px */
