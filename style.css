@@ -1268,6 +1268,21 @@ header .navbar {
     max-width: 320px;
     margin-bottom: 30px;
   }
+  .music-player {
+    bottom: 15px;
+    padding: 6px 12px;
+    gap: 8px;
+  }
+
+  .music-control {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  #volumeControl {
+    width: 65px;
+  }
 }
 
 /* media @ 480px */
