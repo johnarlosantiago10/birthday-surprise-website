@@ -485,7 +485,7 @@ header .navbar {
 
 .vespa {
   position: absolute;
-  max-width: 800px;
+  max-width: 650px;
   right: 20px;
   top: -50px;
 
@@ -555,12 +555,12 @@ header .navbar {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 300px);
-  gap: 100px;
+  gap: 50px;
   margin: 0 auto;
 }
 
 .collection-card {
-  margin-top: 120px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -1003,7 +1003,7 @@ header .navbar {
   justify-content: center;
   align-items: center;
 
-  padding: 200px 20px;
+  padding: 100px 20px;
 
   position: relative;
 
@@ -1049,8 +1049,7 @@ header .navbar {
 .wish-intro-text {
   font-family: "Special Elite", cursive;
 
-  font-size: 1.1rem;
-  line-height: 2;
+  font-size: var(--font-size-n);
 
   color: var(--background);
 

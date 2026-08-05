@@ -130,18 +130,18 @@ function openPrayer() {
   const prayer = document.querySelector("#prayerSection");
   const navbar = document.querySelector("#navbar");
 
-  // Fade out intro
+  // balik sa taas ng prayer
+  window.scrollTo(0, 0);
+
   intro.classList.add("hide");
 
   setTimeout(() => {
     intro.style.display = "none";
 
-    // Hide navbar
     if (navbar) {
       navbar.style.display = "none";
     }
 
-    // Show prayer
     prayer.style.display = "flex";
 
     setTimeout(() => {
@@ -158,6 +158,9 @@ function backToWish(event) {
   const prayer = document.querySelector("#prayerSection");
   const navbar = document.querySelector("#navbar");
 
+  // balik sa taas ng wish
+  window.scrollTo(0, 0);
+
   prayer.classList.remove("show");
 
   setTimeout(() => {
@@ -173,14 +176,4 @@ function backToWish(event) {
       intro.classList.remove("hide");
     }, 50);
   }, 300);
-}
-
-function backToCollection(event) {
-  event.preventDefault();
-
-  document.body.classList.add("fade-out");
-
-  setTimeout(() => {
-    window.location.href = "menu.html";
-  }, 800);
 }
