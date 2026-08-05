@@ -1,0 +1,2 @@
+(self.modernJsonp=self.modernJsonp||[]).push([[21161],{128606(n,e,r){r.r(e);var o=r(700335),l=r.n(o);function s({children:n}){return n(l())}r.d(e,{default:()=>s})},700335(n,e,r){n.exports={locale:"en-US",plural:r(312329)}},312329(n){n.exports=function(n){return 1!==n}}}]);
+//# sourceMappingURL=https://sm.pinimg.com/webapp/locale-en_US-LocaleDataLoader-a22ff3b4ce6ab7b9.mjs.map
